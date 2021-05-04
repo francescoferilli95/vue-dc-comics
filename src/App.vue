@@ -31,8 +31,15 @@ export default {
 <style>
 
   /* GENERAL */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+  }
+
   .container {
-    width: 1000px;
+    width: 1500px;
     margin: 0 auto;
   }
 </style>
