@@ -7,23 +7,26 @@
     
     <!-- MAIN CONTENT -->
     <main>
-
+      <Content />
     </main>
-
     <!-- FOOTER -->
     <footer>
-
+      <Footer />
     </footer>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import Content from '@/components/Content.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Content,
+    Footer
   }
 }
 </script>
@@ -31,10 +34,14 @@ export default {
 <style>
 
   /* GENERAL */
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  a {
     color: #000;
   }
 

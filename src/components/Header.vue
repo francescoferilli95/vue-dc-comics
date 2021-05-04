@@ -46,6 +46,10 @@ header {
     align-items: center;
 }
 
+.logo img {
+    width: 60%;
+}
+
 .navigation ul {
     display: flex;
     align-items: center;
