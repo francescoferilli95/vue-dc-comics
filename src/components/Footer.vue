@@ -169,11 +169,18 @@ a {
 
 .footer-social button {
     width: 250px;
+    height: 70px;
     padding: 5px;
     border: 2px solid #0282f9;
     background: transparent;
     color: #fff;
+    font-size: 20px;
     cursor: pointer;
+    transition: background .3s;
+}
+
+.footer-social button:hover {
+    background: #0282f9;
 }
 
 .follow {
@@ -184,6 +191,12 @@ a {
 
 .footer-social span {
     color: #0282f9;
+    padding-right: 20px;
+}
+
+.footer-social img {
+    padding: 0 5px;
+    cursor: pointer;
 }
 
 .main-footer {

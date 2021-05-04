@@ -48,6 +48,7 @@ header {
 
 .logo img {
     width: 60%;
+    cursor: pointer;
 }
 
 .navigation ul {
@@ -69,6 +70,10 @@ ul a {
 
 ul a:hover {
     background: dodgerblue;
+}
+
+ul li:nth-child(2) a:hover {
+    color: #fff;
 }
 
 </style>
