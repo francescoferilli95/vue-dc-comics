@@ -112,7 +112,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/img/footer-bg.dfd68d29.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     height: 600px;
 }
 
