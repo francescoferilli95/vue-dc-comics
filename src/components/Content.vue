@@ -1,8 +1,13 @@
 <template>
   <main>
+      <div class="hero">
+          <img src="../assets/img/jumbotron.jpg" alt="Jumbotron image Teen Titans">
+      </div>
     <div class="content">
         <div class="container">
-        <h1>--> Content Goes Here</h1>
+        <h2>Current Series</h2>
+            <Comics v-for="(comic, index) in comics" :key="index" :details="comic" />
+            <button>Load More</button>
         </div>
     </div>
     <div class="shop">
@@ -23,21 +28,39 @@
 </template>
 
 <script>
+import Comics from '@/components/Comics.vue';
+import comicData from '@/data/comicData.js'
 export default {
     name: 'Content',
+    components: {
+        Comics
+    },
+    data() {
+        return {
+            comics: comicData
+        }
+ 
+    }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .content {
-        height: 100px;
+        padding-top: 50px;
+        position: relative;
         background: #0e0e0e;
         color: #fff;
         display: flex;
         align-items: center;
     }
+
+    .content .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .shop {
-        height: 139px;
         background: #0282f9;
         color: #fff;
         display: flex;
@@ -61,6 +84,42 @@ export default {
 
     }
 
+    .content h2 {
+        position: absolute;
+        top: -28px;
+        left: 250px;
+        width: 240px;
+        padding: 15px;
+        text-transform: uppercase;
+        background: #0282f9;
+    }
 
+    .container button {
+        text-align: center;
+        text-transform: uppercase;
+        background: #0282f9;
+        color: #fff;
+        border: 0;
+        width: 200px;
+        padding: 10px;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: scale .3s;
+    }
+
+    .container button:hover {
+        transform: scale(1.2);
+    }
+
+    .hero {
+        height: 400px;
+        z-index: -1;
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        position: absolute;
+    }
 
 </style>

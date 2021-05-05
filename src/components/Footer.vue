@@ -107,7 +107,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 footer {
     display: flex;
     flex-direction: column;
@@ -123,6 +123,10 @@ footer {
 ul li {
   list-style: none;
   padding: .3rem 1rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -197,6 +201,11 @@ a {
 .footer-social img {
     padding: 0 5px;
     cursor: pointer;
+    transition: scale .3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
 }
 
 .main-footer {
